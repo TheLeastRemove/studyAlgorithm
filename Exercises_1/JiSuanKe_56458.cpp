@@ -36,6 +36,7 @@ void inFestor(){
     }
     for (int i = -n/2; i < t; ++i){
         for (int j = -n/2; j < t; ++j){
+            //std::cout.width(2);
             std::cout<<nums[abs(i)][abs(j)]<<" ";
         }std::cout<<std::endl;
     }
@@ -48,6 +49,7 @@ void inFestor_plus(){
     {
         for (int j = 0; j < n; ++j)
         {
+            //std::cout.width(2);
             std::cout<<std::abs(i-n/2)+std::abs(j-n/2)+1<<" ";
         }std::cout<<std::endl;
     }
