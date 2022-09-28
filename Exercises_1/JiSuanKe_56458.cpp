@@ -5,7 +5,8 @@
   * @version	V0.1
   * @date    	22/9/24
   * @brief      
-  * @detail	    两个for可以合并，但是我懒。
+  * @detail	    两个for可以合并，但是我懒;
+  *             方法二利用曼哈顿距离计算。
   * @attention
   *  在一个n×n 的矩阵中，每个位置均有一个人。
   *  已知中间点（比如 n=5，则中间点为 (3,3)的那个人感染了病毒。
@@ -23,7 +24,7 @@
 #include <iostream>
 #include <cmath>
 
-int infestor(){
+void inFestor(){
     int n;
     std::cin>>n;
     int t=n/2+1;
@@ -36,6 +37,18 @@ int infestor(){
     for (int i = -n/2; i < t; ++i){
         for (int j = -n/2; j < t; ++j){
             std::cout<<nums[abs(i)][abs(j)]<<" ";
+        }std::cout<<std::endl;
+    }
+}
+
+void inFestor_plus(){
+    int n;
+    std::cin>>n;
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < n; ++j)
+        {
+            std::cout<<std::abs(i-n/2)+std::abs(j-n/2)+1<<" ";
         }std::cout<<std::endl;
     }
 }
