@@ -35,3 +35,4 @@ void isPalind(){
     }
     std::cout<<flag;
 }
+//写一个函数，将顺序串s1中的第i个字符到第j个字符之间的字符用s2串替换。
